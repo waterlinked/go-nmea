@@ -178,6 +178,8 @@ func Parse(raw string) (Sentence, error) {
 			return newGSV(s)
 		case TypeHDT:
 			return newHDT(s)
+		case TypeHDM:
+			return newHDM(s)
 		case TypeGNS:
 			return newGNS(s)
 		case TypeTHS:
